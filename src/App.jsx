@@ -1,20 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import NoPage from "./pages/NoPage"
 
 
 function App() {
-
   return (
-    <Router>
-      <Navbar/>
-      <Hero/>
-      <Routes>
-      </Routes>
-    </Router>
-  )
+    <Routes>
+      <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>} />
+        <Route path="about" element={<About/>} />
+        <Route path="contact" element={<Contact/>} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App
