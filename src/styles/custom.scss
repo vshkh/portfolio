@@ -1,15 +1,38 @@
 $custom-theme-colors: (
     'olive': #41463D,
     'indigo': #9D8DF1,
-    'periwinkle': #B8CDF8,
-    'aquamarine': #95F2D9,
-    'aquamarined': #1CFEBA
+    "indigo-lightest": #E5E1FC,
+    "indigo-lighter": #C2B8F6,
+    "indigo-base": #9D8DF1,
+    "indigo-darker": #7A69D3,
+    "indigo-darkest": #5646A5,
+    "indigo-constrast": #261e4b
 );
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 // custom.scss
 
+.custom-footer {
+    background: map-get($custom-theme-colors, "indigo")!important;
+    background: linear-gradient(177deg, rgba(157,141,241,1) 0%, rgba(192,180,255,1) 100%)!important;
+}
+
+.custom-footer strong {
+    color: map-get($custom-theme-colors, "indigo-constrast" )!important;
+}
+
+.footer-url {
+    color: map-get($custom-theme-colors, "indigo-darkest")!important;
+}
+
+.footer-url:hover {
+    color: #625799!important;
+}
+
+
 .navbar {
-    background: #9d8df1!important;
+    background: map-get($custom-theme-colors, "indigo")!important;
     background: linear-gradient(177deg, rgba(157,141,241,1) 0%, rgba(192,180,255,1) 100%)!important;
 }
 

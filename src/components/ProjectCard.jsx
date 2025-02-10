@@ -1,15 +1,18 @@
 import { Alert, Card, Col, Button } from "react-bootstrap";
 
-function ProjectCard({ title, description, technologies }) {
+function ProjectCard({ title, description, technologies, isInDev=true}) {
     return (  
         <Col>
             <Card>
-                <Alert variant="danger">In Development!</Alert>
+                {isInDev && <Alert variant="danger" className="text-center">In Development!</Alert>}
+                {!isInDev && <Alert variant="success" className="text-center">Project is Live!</Alert>}
                 
                 <Card.Body>
-                    <Card.Title>{title}</Card.Title>
-                    <Card.Text>{description}</Card.Text>
-                    <Button variant="success">Read More!</Button>
+                    <Card.Title className="text-center">{title}</Card.Title>
+                    <Card.Text className="text-center">{description}</Card.Text>
+                    {isInDev && <Button className="d-block mx-auto" variant="dark" disabled>Coming Soon...</Button>}
+                    {!isInDev && <Button className="d-block mx-auto" variant="indigo-darkest">Check it out!</Button>}
+                    
                 </Card.Body>
                 
             </Card>

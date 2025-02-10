@@ -1,7 +1,7 @@
 import { Container, Alert } from "react-bootstrap";
 
+// Error page if they navigate to a URL that does not exist
 function NoPage() {
-    console.log("Home component renders");
     return (
         
         <Container>
