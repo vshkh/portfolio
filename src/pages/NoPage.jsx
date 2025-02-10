@@ -2,7 +2,7 @@ function NoPage() {
     console.log("Home component renders");
     return (
         
-        <p>Test!</p>
+        <p>Oops, nothing exists here!</p>
     );
 }
 
