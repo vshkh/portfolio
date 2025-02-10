@@ -1,0 +1,24 @@
+$custom-theme-colors: (
+    'olive': #41463D,
+    'indigo': #9D8DF1,
+    'periwinkle': #B8CDF8,
+    'aquamarine': #95F2D9,
+    'aquamarined': #1CFEBA
+);
+
+// custom.scss
+
+.navbar {
+    background: #9d8df1!important;
+    background: linear-gradient(177deg, rgba(157,141,241,1) 0%, rgba(192,180,255,1) 100%)!important;
+}
+
+.navbar-brand {
+    color: #3b335f!important;
+}
+
+.nav-link:hover {
+    background-color: #8273cc; 
+}
+
+@import 'bootstrap/scss/bootstrap';

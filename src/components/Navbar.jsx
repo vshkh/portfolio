@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container} from "react-bootstrap";
 
 function Navigation() {
     return (
-        <Navbar bg="primary" data-bs-theme="dark" expand="lg">
+        <Navbar expand="lg">
             <Container>
-                {/* Brand/Logo */}
                 <Navbar.Brand as={Link} to="/">
                     <img
                         src="https://i.imgur.com/mBMuOTg.png"
@@ -14,7 +13,7 @@ function Navigation() {
                         className="d-inline-block align-top me-2"
                         alt="Logo"
                     />
-                    Vishakh's World
+                    <strong>Vishakh's World</strong>
                 </Navbar.Brand>
 
                 {/* Toggle Button for Mobile */}
@@ -26,6 +25,7 @@ function Navigation() {
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
                         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
