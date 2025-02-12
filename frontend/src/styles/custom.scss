@@ -1,0 +1,52 @@
+$custom-theme-colors: (
+    'olive': #41463D,
+    'indigo': #9D8DF1,
+    "indigo-lightest": #E5E1FC,
+    "indigo-lighter": #C2B8F6,
+    "indigo-base": #9D8DF1,
+    "indigo-darker": #7A69D3,
+    "indigo-darkest": #5646A5,
+    "indigo-darkestest": #3f337a,
+    "indigo-contrast": #141029
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// custom.scss
+
+.custom-footer {
+    background: map-get($custom-theme-colors, "indigo")!important;
+    background: linear-gradient(177deg, rgba(157,141,241,1) 0%, rgba(192,180,255,1) 100%)!important;
+}
+
+.custom-footer strong {
+    color: map-get($custom-theme-colors, "indigo-constrast" )!important;
+}
+
+.footer-url {
+    color: map-get($custom-theme-colors, "indigo-darkest")!important;
+}
+
+.footer-url:hover {
+    color: #625799!important;
+}
+
+
+.navbar {
+    background: map-get($custom-theme-colors, "indigo")!important;
+    background: linear-gradient(177deg, rgba(157,141,241,1) 0%, rgba(192,180,255,1) 100%)!important;
+}
+
+.navbar-brand {
+    color: #3b335f!important;
+}
+
+.nav-link:hover {
+    background-color: #8273cc; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:#e7e2ff!important;
+}
+
+@import 'bootstrap/scss/bootstrap';
