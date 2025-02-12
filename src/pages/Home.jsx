@@ -1,6 +1,5 @@
 import { Container, Button, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import chrolloGif from "../assets/chrollo.gif"
 
 function Home() {
     return (
@@ -9,9 +8,6 @@ function Home() {
                 <h1 className="fw-bold">Welcome to my Portfolio!</h1>
                 <p className="lead">Use the buttons below to navigate. Enjoy your stay!</p>
             </Container>
-
-            {/* Add image udnerneath */}
-            <Image fluid className="d-block mx-auto" src={chrolloGif}></Image>
 
             {/* Grid of large buttons to navigate from the home page */}
             <Container className="d-grid gap-3 mt-4 mb-4">

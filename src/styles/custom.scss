@@ -44,4 +44,8 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
     background-color: #8273cc; 
 }
 
+.accordion-button:not(.collapsed) {
+    background-color:#e7e2ff!important;
+}
+
 @import 'bootstrap/scss/bootstrap';

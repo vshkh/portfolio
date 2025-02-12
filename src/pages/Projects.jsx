@@ -10,15 +10,20 @@ function Projects() {
             {/* Add a grid to align different projects */}
             <Row>
                 <ProjectCard
-                    title={"Rocket Ship"}
-                    description={"Using xxx, xxx, and xxx, I was able to build a rocket ship which was able to fly."}
-                    technologies={["Python", "React", "Others"]}
+                    title={"Portfolio Site"}
+                    description={"To make a site and display my current/future projects, I used React to create a portfolio page. Also using Bootstrap to develop the components and Express to host the backend."}
+                    technologies={["HTML/CSS/Javascript", "React"]}
                     isInDev={false}
                 />
                 <ProjectCard
-                    title={"Improve Teaching Web App"}
-                    description={"To make a tool that aids people with improving their explantion, I programmed this using xxx, xxx, and xxx."}
-                    technologies={["LangChain", "React", "LLMs"]}
+                    title={"Boxing Stance Guide"}
+                    description={"Using OpenCV, Mediapipe, and NumPy, I programmed a small tool that helps you maintain the high guard (a guard most commonly used in Muay Thai), alerting you when you dropped your hands."}
+                    technologies={["Python", "Mediapipe", "Computer Vision"]}
+                />
+                <ProjectCard
+                    title={"Work in Progress"}
+                    description={"..."}
+                    technologies={["Coming Soon"]}
                 />
             </Row>
         </Container>
